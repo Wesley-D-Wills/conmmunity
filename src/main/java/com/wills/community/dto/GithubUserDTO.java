@@ -1,49 +1,40 @@
 package com.wills.community.dto;
 
 public class GithubUserDTO {
-    private String client_id;
-    private String client_secret;
-    private String code;
-    private String redirect_uri;
-    private String state;
+    private String login;
+    private Long id;
+    private String name;
+    private String bio;
 
-    public String getClient_id() {
-        return client_id;
+    public String getLogin() {
+        return login;
     }
 
-    public void setClient_id(String client_id) {
-        this.client_id = client_id;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
-    public String getClient_secret() {
-        return client_secret;
+    public String getBio() {
+        return bio;
     }
 
-    public void setClient_secret(String client_secret) {
-        this.client_secret = client_secret;
+    public void setBio(String bio) {
+        this.bio = bio;
     }
 
-    public String getCode() {
-        return code;
+    public Long getId() {
+        return id;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public String getRedirect_uri() {
-        return redirect_uri;
+    public String getName() {
+        return name;
     }
 
-    public void setRedirect_uri(String redirect_uri) {
-        this.redirect_uri = redirect_uri;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
+    public void setName(String name) {
+        this.name = name;
     }
 }
